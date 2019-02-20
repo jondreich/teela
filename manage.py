@@ -1,4 +1,4 @@
-from flask.ext.script import Manager, Shell
+from flask_script import Manager, Shell
 
 from teela import init
 from teela.extensions import db

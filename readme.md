@@ -27,11 +27,11 @@ Includes an `example` model for the purpose of demonstration SQL querying and ba
 
 2. Initialise database with Fabric
 
-        $ fab setup
+        $ fab3 setup
 
 3. Run with Fabric
 
-        $ fab run
+        $ fab3 run
 
 ### Application and environment configuration
 

@@ -1,5 +1,5 @@
 from flask import Blueprint, flash, render_template, redirect, request, url_for
-from flask.ext.login import login_required
+from flask_login import login_required
 
 from teela.example.forms import MessageForm
 from teela.example.models import Message

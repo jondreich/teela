@@ -34,7 +34,7 @@ class Config(object):
     try:
         if not os.path.exists(LOG_FOLDER) or not os.access(LOG_FOLDER, os.W_OK):
             os.mkdir(LOG_FOLDER)
-    except Exception, e:
+    except Exception as e:
         FILE_LOGGING = False
 
     LOG_NAME = env_var('LOG_NAME', default='info.log')
