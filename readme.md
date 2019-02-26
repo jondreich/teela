@@ -6,6 +6,8 @@ Bootstraps a typical Flask application with authentication, SQL database, forms 
 
 Includes an `example` model for the purpose of demonstration SQL querying and basic CRUD admin actions. Basic templates and static file structure also in place.
 
+Updated for python3
+
 ### Dependencies
 
 - [Flask](http://flask.pocoo.org/) - Python Web framework
@@ -17,21 +19,22 @@ Includes an `example` model for the purpose of demonstration SQL querying and ba
 - [Gunicorn](http://gunicorn.org/) - WSGI HTTP server
 - [Honcho](https://github.com/nickstenning/honcho) - a Python clone of [Foreman](http://ddollar.github.com/foreman/)
 - [Fabric](http://fabfile.org/) - command-line system admin, deployment, remote management
-- [IPython](http://ipython.org/) - interactive shell
 
 ## Getting started
 
 1. Install requirements (use [virtualenv](https://pypi.python.org/pypi/virtualenv))
 
-        $ pip install -r requirements.txt
+        $ pip3 install -r requirements.txt
 
-2. Initialise database with Fabric
+2. Start postgres database and update .env
 
-        $ fab3 setup
+3. Initialise database with Fabric
 
-3. Run with Fabric
+        $ fab setup
 
-        $ fab3 run
+4. Run with Fabric
+
+        $ fab run
 
 ### Application and environment configuration
 

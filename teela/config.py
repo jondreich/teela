@@ -40,7 +40,7 @@ class Config(object):
     LOG_NAME = env_var('LOG_NAME', default='info.log')
     LOG_PATH = os.path.join(LOG_FOLDER, LOG_NAME)
     LOG_MAX_BYTES = env_var('LOG_MAX_BYTES', default='info.log')
-    LOG_BACKUP_COUNT = 1#env_var('LOG_BACKUP_COUNT', default='info.log')
+    LOG_BACKUP_COUNT = env_var('LOG_BACKUP_COUNT', default='info.log')
 
     # Flask-Cache: http://pythonhosted.org/Flask-Cache/
     CACHE_TYPE = env_var('CACHE_TYPE', default='simple')
