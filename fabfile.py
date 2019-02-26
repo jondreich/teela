@@ -20,25 +20,25 @@ def run():
 @task
 def dev():
     """ Run with Flask server. """
-    honcho_run('python manage.py run')
+    honcho_run('python3 manage.py run')
 
 
 @task
 def setup():
     """ Set up application and database. """
-    honcho_run('python manage.py setup')
+    honcho_run('python3 manage.py setup')
 
 
 @task
 def shell():
     """ Start an interactive shell within application environment. """
-    honcho_run('python manage.py shell')
+    honcho_run('python3 manage.py shell')
 
 
 @task
 def test():
     """ Run tests. """
-    honcho_run('python test.py')
+    honcho_run('python3 test.py')
 
 
 @task

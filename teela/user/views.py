@@ -1,5 +1,5 @@
 from flask import Blueprint, flash, request, redirect, render_template, url_for
-from flask.ext.login import confirm_login, current_user, login_required, \
+from flask_login import confirm_login, current_user, login_required, \
     login_user, logout_user
 
 from teela.user.forms import LoginForm, ReauthForm

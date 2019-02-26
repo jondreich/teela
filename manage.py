@@ -5,9 +5,9 @@ from teela.extensions import db
 from teela.example import models as example_models
 from teela.user import models as user_models
 
+
 app = init()
 manager = Manager(app)
-
 
 @manager.command
 def run():

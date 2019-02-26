@@ -1,4 +1,4 @@
-from flask.ext.login import UserMixin
+from flask_login import UserMixin
 from sqlalchemy import Column
 from werkzeug import generate_password_hash, check_password_hash
 
@@ -10,7 +10,7 @@ class User(db.Model, UserMixin):
     """ Basic User model, username and encrypted password. """
     id = Column(db.Integer, primary_key=True)
     username = Column(db.String(64), nullable=False, unique=True)
-    password_store = Column('password', db.String(64), nullable=False)
+    password_store = Column('password', db.String(256), nullable=False)
 
     def get_password(self):
         return self.password_store
